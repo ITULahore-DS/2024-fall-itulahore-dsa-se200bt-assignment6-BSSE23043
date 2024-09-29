@@ -31,7 +31,7 @@ int Node::getData(){
     return data;
 }
 
-//Stack
+//----------------------------------------------------------Stack----------------------------------------------------------------------//
 
 Stack::Stack(){
     top = nullptr;
@@ -218,5 +218,14 @@ void Queue::printQueue(){
         cout << tempPointer->getData() << " ";
         tempPointer = tempPointer->getNext();
     }
+}
+
+int Queue::peek(){
+    if(isEmpty() == true){
+        cout << "Queue-> peek: Queue is empty! Returning -1!" << endl;
+        return -1;
+    }
+
+    return front->getData();
 }
 
