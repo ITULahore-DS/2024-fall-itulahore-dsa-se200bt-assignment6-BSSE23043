@@ -117,6 +117,7 @@ TEST_CASE("Pop from empty stack test", "[pop]") {
 
     // Ensure the stack is still empty
     REQUIRE(myStack.isEmpty() == true);
+    cout << "Pop Function Done" << endl;
 }
 
 TEST_CASE("Peek from empty stack test", "[peek]") {
@@ -128,5 +129,9 @@ TEST_CASE("Peek from empty stack test", "[peek]") {
     // Since peek returns -1 when the stack is empty
     REQUIRE(topValue == -1);
 }
+
+
+
+
 
 
